@@ -10,6 +10,7 @@ describe('Тестирование магазина аватаров', function 
          cy.get(':nth-child(1) > .pay_base-input-v2').type('1224');
          cy.get('.pay-inputs-box > :nth-child(2) > .pay_base-input-v2').type('125');
          cy.get('.pay__input-box-last-of > .pay_base-input-v2').type('Ana Banana');
+         cy.wait(1000);
          cy.get('.pay-btn').click();
          cy.get('#cardnumber').type('56456');
          cy.get('.payment__submit-button').click();
